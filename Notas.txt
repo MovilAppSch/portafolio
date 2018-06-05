@@ -1,4 +1,4 @@
------------------------------RUTAS---------------------------------------------------------
+//////////////////////            RUTAS                     ////////////////////////////////
 las exportaciones de las paginas se crearon manualmente creando el archivo index.paginas.ts
 despues se añado al archivo el creo el archivo app.routes.ts donde se importo 
 todas las paginas de (index.paginas.ts) unas ves creadas las rutas
@@ -22,3 +22,29 @@ import{ app_routing } from "./app.routes";
   <a routerLink="/about" class="rk-menu__link">Sobre nosotros</a>
   </li>
   ------------------------------------------------------------------------------------------
+
+  //////////// CREACION DE DATOS DINAMOS USANDO UN JSON //////////////////////////////////
+
+portafolio\src\assets\data\info.pagina.json
+
+los datos se comprueban en la siguiente pagina: http://json.parser.online.fr/
+
+se agrego el servicio y se modifico el app.module.ts
+
+//PARA TRABAJAR CON SERVICIOS
+import { HttpModule } from "@angular/http";
+
+//SERVICIOS
+import { InformacionService } from "./services/informacion.service";
+
+ imports: [
+    BrowserModule,
+    HttpModule,
+    app_routing
+  ],
+
+providers: [
+    InformacionService
+  ],
+------------------------------------------------------------------------------------------
+
