@@ -1,0 +1,24 @@
+-----------------------------RUTAS---------------------------------------------------------
+las exportaciones de las paginas se crearon manualmente creando el archivo index.paginas.ts
+despues se añado al archivo el creo el archivo app.routes.ts donde se importo 
+todas las paginas de (index.paginas.ts) unas ves creadas las rutas
+se importo en (app.modules.ts)
+
+//RUTAS
+import{ app_routing } from "./app.routes";
+
+ imports: [
+    BrowserModule,
+    app_routing
+  ],
+
+  para usar las rutas en los archivos html es de la siguiente forma:
+
+  <li class="rk-menu__item"><a routerLink="/" class="rk-menu__link">Home</a></li>
+
+  si queremos que quede activado el titulo o el seleccionado:
+  
+  <li class="rk-menu__item" routerLinkActive="active">
+  <a routerLink="/about" class="rk-menu__link">Sobre nosotros</a>
+  </li>
+  ------------------------------------------------------------------------------------------
