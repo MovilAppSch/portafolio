@@ -9,7 +9,7 @@ export class InformacionService {
   info: any = {};
   cargada: boolean = false;
 
-  equipo: any = {};
+  equipo: any = [];
   cargada_sobreNosotros: boolean = false;
 
   constructor(public http: Http) {
