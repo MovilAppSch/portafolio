@@ -1,0 +1,37 @@
+*agregar un alias para poder usar ng
+
+alias ng="C:/Users/SERVER/AppData/Roaming/npm/node_modules/@angular/cli/bin/ng"
+
+-------------------------------------------------------------------------------
+
+*Al crear el nuevo proyecto de angular con cli reiniciar el editor de codigo.
+
+-----------------------------------------------------------------------------
+
+*Para trabajar con un localhost escribir lo siguiente en el terminal : ng serve -o
+
+--------------------------------------------------------------------------------
+
+*los recursos estaticos del html(js-css-img) ponerlos en la carpera src/asset
+
+--------------------------------------------------------------------------------
+
+*Para crear un componente de angular escribir en el terminal : ng g c components/header
+
+*Para crear un componente de angular sin el spec y el css escribir en el terminal : ng g c components/header --spec false -is
+
+--------------------------------------------------------------------------------
+
+*para trabajar con git : 
+
+$ git init  aca inicia git
+$ git add . aca añade los cambios
+$ git commit -m "header, body, footer listo" aca hacemos el commit y ponemos un comentario
+
+--------------------------------------------------------------------------------
+
+CREANDO SERVICIOS PARA LOS DATOS DINAMICOS .JSON
+
+$ ng g s services/informacion
+
+--------------------------------------------------------------------------------

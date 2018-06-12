@@ -20,7 +20,7 @@ export class InformacionService {
   public carga_info() {
     this.http.get("assets/data/info.pagina.json").
       subscribe(data => {
-        console.log(data.json());
+        // console.log(data.json());
         this.cargada = true;
         this.info = data.json();
       });
@@ -29,7 +29,7 @@ export class InformacionService {
   public carga_sobre_nosotros() {
     this.http.get("https://angularfirebase-82686.firebaseio.com/equipo.json").
       subscribe(data => {
-        console.log(data.json());
+        //  console.log(data.json());
         this.cargada_sobreNosotros = true;
         this.equipo = data.json();
       });
