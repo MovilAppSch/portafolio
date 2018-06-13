@@ -28,4 +28,8 @@ export class ProductosService {
         });
     }
   }
+
+  public cargar_producto(cod: string) {
+    return this.http.get('https://angularfirebase-82686.firebaseio.com/productos/' + cod + '.json');
+  }
 }
