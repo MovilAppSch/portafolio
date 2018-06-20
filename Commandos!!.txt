@@ -35,3 +35,18 @@ CREANDO SERVICIOS PARA LOS DATOS DINAMICOS .JSON
 $ ng g s services/informacion
 
 --------------------------------------------------------------------------------
+
+PREPARANDO EL PROYECTO PARA PRODUCCION
+
+Estos trabajan
+ng build
+ng build --prod
+
+Estos fallan
+ng build --environment prod
+ng build --aot
+
+si ahi problemas con los archivos de imagen
+ng build --prod --output-path dist --base-href "/portafolio/"
+crea un nuevo build o sobre escribe el mismo tener cuidado
+--------------------------------------------------------------------------------
