@@ -17,7 +17,7 @@ export class SearchComponent {
 
       this.termino = parametros['termino'];
       
-      console.log('termino: ', this.termino);
+      // console.log('termino: ', this.termino);
       
       _ps.buscar_producto(this.termino);
     })

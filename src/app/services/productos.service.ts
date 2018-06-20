@@ -35,7 +35,7 @@ export class ProductosService {
 
   // BUSCAR PRODUCTO (VALOR)
   public buscar_producto(termino: string) {
-    console.log("buscando Productos", this.productos.length);
+    // console.log("buscando Productos", this.productos.length);
 
     if (this.productos.length === 0) {
       this.cargar_productos().then(() => {
@@ -63,7 +63,7 @@ export class ProductosService {
         this.productos_filtrado.push(prod);
 
       }
-      console.log('prod: ', prod);
+      // console.log('prod: ', prod);
 
     })
   }
