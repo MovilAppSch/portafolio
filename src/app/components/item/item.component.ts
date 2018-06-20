@@ -16,12 +16,16 @@ export class ItemComponent {
   
   constructor(private route: ActivatedRoute,
     private _ps: ProductosService) {
+
     route.params.subscribe(parametros => {
       // console.log(parametros['id']);
       this.cod = parametros['id'];
+
       _ps.cargar_producto(parametros['id'])
         .subscribe(res => {
+          
           this.producto = res.json();
+
           console.log(this.producto);
         })
     })
