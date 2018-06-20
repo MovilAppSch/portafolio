@@ -25,37 +25,25 @@
         <li class="rk-menu__item" routerLinkActive="active">
           <a routerLink="/about" class="rk-menu__link">Sobre nosotros</a>
         </li>
-        <!-- <li class="rk-menu__item">
-          <a href="blog.html" class="rk-menu__link">Blog</a>
-        </li>
-        <li class="rk-menu__item">
-          <a href="#0" class="rk-menu__link">Pages</a>
-          <nav class="rk-menu__sub">
-            <ul class="rk-container">
-              <li class="rk-menu__item">
-                <a href="about.html" class="rk-menu__link">About</a>
-              </li>
-              <li class="rk-menu__item">
-                <a href="documentation.html" class="rk-menu__link">Documentation</a>
-              </li>
-              <li class="rk-menu__item">
-                <a href="design-styles.html" class="rk-menu__link">Design Styles</a>
-              </li>
-            </ul>
-          </nav>
-        </li>
-        <li class="rk-menu__item">
-          <a href="contact.html" class="rk-menu__link">Contact Us</a>
-        </li> -->
       </ul>
-      <form class="rk-search">
-        <input type="text" placeholder="Search" id="urku-search" class="rk-search-field">
+      <!-- <form class="rk-search"> se tuvo que cambiar de form a div porque 
+        recargaba la pagina -->
+      <div class="rk-search">
+        <input name="buscar" 
+        (keyup.enter)="buscar_producto( buscarTexto.value )" 
+        #buscarTexto 
+        type="text" 
+        placeholder="Search" 
+        id="urku-search"
+        class="rk-search-field">
+
         <label for="urku-search">
           <svg>
             <use xlink:href="assets/img/symbols.svg#icon-search"></use>
           </svg>
         </label>
-      </form>
+      </div>
+      <!-- </form> -->
     </nav>
   </div>
 </header>
